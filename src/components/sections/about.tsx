@@ -1,37 +1,19 @@
+"use client";
+import dynamic from 'next/dynamic';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { about, experiences, education } from "@/lib/data";
 import { Briefcase, GraduationCap } from "lucide-react";
-import PixelBlast from "@/components/ui/pixel-blast";
+
+const PixelBlast = dynamic(() => import('@/components/ui/pixel-blast'), { ssr: false });
 
 export function About() {
   return (
     <section id="about" className="relative py-24 sm:py-32 overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <PixelBlast
-          variant="circle"
-          pixelSize={6}
-          color="#228B22"
-          patternScale={3}
-          patternDensity={1.2}
-          pixelSizeJitter={0.5}
-          enableRipples
-          rippleSpeed={0.4}
-          rippleThickness={0.12}
-          rippleIntensityScale={1.5}
-          liquid
-          liquidStrength={0.12}
-          liquidRadius={1.2}
-          liquidWobbleSpeed={5}
-          speed={0.6}
-          edgeFade={0.25}
-          transparent
-        />
-      </div>
       <div className="container">
         <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">
           About Me
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-center text-foreground/80">
+        <p className="mx-auto mt-4 max-w-3xl text-center text-foreground">
           {about}
         </p>
 
