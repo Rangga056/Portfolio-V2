@@ -7,25 +7,10 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, ArrowRight } from "lucide-react";
-import dynamic from 'next/dynamic';
-
-const Dither = dynamic(() => import('../ui/Dither'), { ssr: false });
 
 export function Projects() {
   return (
     <section id="projects" className="relative py-24 sm:py-32 overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <Dither
-          waveColor={[0.13, 0.55, 0.13]}
-          disableAnimation={false}
-          enableMouseInteraction={true}
-          mouseRadius={0.3}
-          colorNum={4}
-          waveAmplitude={0.3}
-          waveFrequency={3}
-          waveSpeed={0.05}
-        />
-      </div>
       <div className="container">
         <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">
           Featured Projects
