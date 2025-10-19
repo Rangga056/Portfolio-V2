@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/lib/data";
+import { projects, socialLinks } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, ArrowRight } from "lucide-react";
 
 export function Projects() {
   return (
@@ -70,6 +70,14 @@ export function Projects() {
               </Card>
             );
           })}
+        </div>
+        <div className="mt-12 text-center">
+            <Button asChild size="lg">
+                <Link href={`${socialLinks.github}?tab=repositories`} target="_blank">
+                    View All Repositories
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+            </Button>
         </div>
       </div>
     </section>
