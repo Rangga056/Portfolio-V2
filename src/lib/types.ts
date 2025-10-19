@@ -12,10 +12,7 @@ export type Education = {
   details: string;
 };
 
-export type Skill = {
-  name: string;
-  icon: React.ReactNode;
-};
+export type Skill = string;
 
 export type SkillCategory = {
   title: string;

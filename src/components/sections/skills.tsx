@@ -22,9 +22,8 @@ export function Skills() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.items.map((skill) => (
-                    <Badge key={skill.name} variant="secondary" className="flex items-center gap-2 text-sm font-normal">
-                      {skill.icon}
-                      <span>{skill.name}</span>
+                    <Badge key={skill} variant="secondary" className="text-sm font-normal">
+                      {skill}
                     </Badge>
                   ))}
                 </div>

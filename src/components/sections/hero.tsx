@@ -2,12 +2,13 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { Github, FileText } from "lucide-react";
+import { Github } from "lucide-react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import { name, title, socialLinks } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import LightRays from "@/components/ui/light-rays";
 
 gsap.registerPlugin(useGSAP);
 
@@ -49,7 +50,21 @@ export function Hero() {
       ref={container}
       className="relative flex min-h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 -z-10 bg-grid-white/[0.05]" />
+      <div className="absolute inset-0 -z-10">
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#32CD32"
+          raysSpeed={1.5}
+          lightSpread={0.8}
+          rayLength={1.2}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="custom-rays"
+        />
+        <div className="absolute inset-0 bg-grid-white/[0.05]" />
+      </div>
       <div className="container text-center">
         <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl">
           {heroTitle.split("").map((char, index) => (
