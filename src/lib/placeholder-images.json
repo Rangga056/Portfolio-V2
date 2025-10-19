@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "projectCarRental",
+      "description": "A modern car rental web application interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1753183514907-7daaec6f8df8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwY2FyfGVufDB8fHx8MTc2MDg0NzA2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern car"
+    },
+    {
+      "id": "projectAcademicSystem",
+      "description": "A dashboard for an academic information system.",
+      "imageUrl": "https://images.unsplash.com/photo-1744479567982-cbfe0ac7ea0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dW5pdmVyc2l0eSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjA4NzI0MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university dashboard"
+    },
+    {
+      "id": "projectAIModel",
+      "description": "A visualization of an AI data model.",
+      "imageUrl": "https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NjA4NTA4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data visualization"
+    }
+  ]
 }
