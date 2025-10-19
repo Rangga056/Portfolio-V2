@@ -5,10 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Mail, Send } from "lucide-react";
 import { email } from "@/lib/data";
+import Aurora from "@/components/ui/Aurora";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 sm:py-32">
+    <section id="contact" className="relative py-24 sm:py-32 overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <Aurora
+          colorStops={["#228B22", "#32CD32", "#228B22"]}
+          blend={0.5}
+          amplitude={1.0}
+          speed={0.2}
+        />
+      </div>
       <div className="container">
         <div className="mx-auto max-w-2xl">
           <Card>

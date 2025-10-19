@@ -6,7 +6,6 @@ import { Skills } from "@/components/sections/skills";
 import { Projects } from "@/components/sections/projects";
 import { GitStats } from "@/components/sections/git-stats";
 import { Contact } from "@/components/sections/contact";
-import { ResumeRefinement } from "@/components/sections/resume-refinement";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
         <Skills />
         <Projects />
         <GitStats />
-        <ResumeRefinement />
         <Contact />
       </main>
       <Footer />
