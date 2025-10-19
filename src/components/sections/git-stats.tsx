@@ -3,8 +3,8 @@ import { socialLinks } from "@/lib/data";
 
 export function GitStats() {
   const GITHUB_USERNAME = "Rangga056";
-  const STATS_URL = `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&theme=tokyonight&show_icons=true`;
-  const LANGS_URL = `https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&hide=jupyter%20notebook&theme=tokyonight&show_icons=true&hide_border=true&layout=compact`;
+  const STATS_URL = `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=transparent&bg_color=00000000&title_color=32CD32&text_color=ffffff&icon_color=32CD32&hide_border=true`;
+  const LANGS_URL = `https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&hide=jupyter%20notebook&theme=transparent&bg_color=00000000&title_color=32CD32&text_color=ffffff&icon_color=32CD32&hide_border=true&layout=compact`;
 
   return (
     <section id="git-stats" className="bg-muted/30 py-24 sm:py-32">
@@ -16,15 +16,15 @@ export function GitStats() {
           My activity and language usage on GitHub.
         </p>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-8">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-8">
           <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={STATS_URL}
               alt="GitHub Stats"
-              width={400}
-              height={165}
-              className="rounded-lg border border-border"
+              width={495}
+              height={195}
+              className="rounded-lg"
             />
           </Link>
           <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
@@ -32,9 +32,9 @@ export function GitStats() {
             <img
               src={LANGS_URL}
               alt="Top Languages"
-              width={400}
+              width={320}
               height={165}
-              className="rounded-lg border border-border"
+              className="rounded-lg"
             />
           </Link>
         </div>
