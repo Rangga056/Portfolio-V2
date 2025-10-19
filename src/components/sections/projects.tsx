@@ -6,10 +6,23 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, ArrowRight } from "lucide-react";
+import DotGrid from "@/components/ui/DotGrid";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 sm:py-32">
+    <section id="projects" className="relative py-24 sm:py-32 overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <DotGrid
+          dotSize={2}
+          gap={20}
+          baseColor="#228B22"
+          activeColor="#32CD32"
+          proximity={100}
+          shockRadius={200}
+          shockStrength={0.2}
+          resistance={200}
+        />
+      </div>
       <div className="container">
         <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">
           Featured Projects
@@ -23,7 +36,7 @@ export function Projects() {
               (p) => p.id === project.image
             );
             return (
-              <Card key={project.title} className="flex flex-col">
+              <Card key={project.title} className="flex flex-col bg-card/80 backdrop-blur-sm">
                 <CardHeader>
                   {placeholder && (
                     <div className="aspect-video overflow-hidden rounded-md border">
