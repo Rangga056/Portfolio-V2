@@ -6,21 +6,25 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, ArrowRight } from "lucide-react";
-import DotGrid from "@/components/ui/DotGrid";
+import GradientBlinds from "../ui/GradientBlinds";
 
 export function Projects() {
   return (
     <section id="projects" className="relative py-24 sm:py-32 overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <DotGrid
-          dotSize={2}
-          gap={20}
-          baseColor="#228B22"
-          activeColor="#32CD32"
-          proximity={100}
-          shockRadius={200}
-          shockStrength={0.2}
-          resistance={200}
+      <GradientBlinds
+          gradientColors={['#228B22', '#32CD32']}
+          angle={0}
+          noise={0.1}
+          blindCount={12}
+          blindMinWidth={50}
+          spotlightRadius={0.5}
+          spotlightSoftness={1}
+          spotlightOpacity={0.5}
+          mouseDampening={0.15}
+          distortAmount={0}
+          shineDirection="left"
+          mixBlendMode="lighten"
         />
       </div>
       <div className="container">
