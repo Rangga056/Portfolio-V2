@@ -31,7 +31,7 @@ export function About() {
         <h2 className="text-center font-headline text-3xl font-bold md:text-4xl">
           About Me
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
+        <p className="mx-auto mt-4 max-w-3xl text-center text-foreground/80">
           {about}
         </p>
 
