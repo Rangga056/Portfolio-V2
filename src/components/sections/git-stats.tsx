@@ -18,7 +18,7 @@ export function GitStats() {
 
   const STATS_URL = `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=transparent&bg_color=00000000&title_color=32CD32&text_color=ffffff&icon_color=32CD32&hide_border=true`;
   const LANGS_URL = `https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&hide=jupyter%20notebook&theme=transparent&bg_color=00000000&title_color=32CD32&text_color=ffffff&icon_color=32CD32&hide_border=true&layout=compact`;
-  const CONTRIB_URL = `https://ghchart.rshah.org/${GITHUB_USERNAME}?color_scheme=dark&year=${selectedYear}`;
+  const CONTRIB_URL = `https://ghchart.rshah.org/${GITHUB_USERNAME}?bg_color=121212&color=32CD32&year=${selectedYear}`;
 
   const years = Array.from({ length: 5 }, (_, i) => currentYear - i);
 
