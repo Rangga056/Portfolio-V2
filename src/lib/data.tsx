@@ -34,19 +34,19 @@ const NextJsIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const GoIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 192 192" width="24" height="24" fill="none" {...props}>
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="12"
         d="M96 170c40.876 0 74-33.124 74-74 0-40.876-33.124-74-74-74-40.876 0-74 33.124-74 74"
       />
       <path
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="12"
         d="M78 96h52M24 96h18"
       />
       <circle
@@ -54,24 +54,24 @@ const GoIcon = (props: React.SVGProps<SVGSVGElement>) => (
         cy="96"
         r="4"
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="8"
       />
       <circle
         cx="130"
         cy="96"
         r="4"
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="8"
       />
       <path
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="12"
         d="M26 96c0-35.346 22.386-64 50-64M118 42c8.847 0 16 7.153 16 16v76c0 8.847-7.153 16-16 16H74c-8.847 0-16-7.153-16-16"
       />
     </g>
@@ -98,7 +98,7 @@ const PythonIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const ReactIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="-11.5 -10.232 23 20.463" width="24" height="24" {...props}>
     <circle r="2.05" fill="#61dafb"></circle>
-    <g stroke="#61dafb" stroke-width="1" fill="none">
+    <g stroke="#61dafb" strokeWidth="1" fill="none">
       <ellipse rx="11" ry="4.2"></ellipse>
       <ellipse rx="11" ry="4.2" transform="rotate(60)"></ellipse>
       <ellipse rx="11" ry="4.2" transform="rotate(120)"></ellipse>
@@ -164,9 +164,9 @@ const ZodIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <path
       fill="none"
       stroke="#000"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
       d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m5 5l4 6H9l4-6H9m8 10v-4h-4"
     ></path>
   </svg>
@@ -189,16 +189,16 @@ const VimIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" width="24" height="24" fill="none" {...props}>
     <path
       stroke="#019733"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="m18.5 3.5-6 17-6-17"
     ></path>
     <path
       stroke="#019733"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="M17 12H7"
     ></path>
   </svg>
@@ -208,37 +208,37 @@ const NeovimIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" width="24" height="24" fill="none" {...props}>
     <path
       stroke="#57a143"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="m12 21 8-5.5V8.5L12 3 4 8.5v7L12 21"
     ></path>
     <path
       stroke="#57a143"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="m12 3 8 5.5"
     ></path>
     <path
       stroke="#96c559"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="m20 8.5-8 5.5-8-5.5"
     ></path>
     <path
       stroke="#57a143"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="m4 8.5 8 5.5"
     ></path>
     <path
       stroke="#96c559"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       d="m12 21V14"
     ></path>
   </svg>
@@ -246,7 +246,7 @@ const NeovimIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const LubuntuIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" width="24" height="24" {...props}>
-    <g clip-path="url(#a)">
+    <g clipPath="url(#a)">
       <path
         fill="#0068C8"
         d="M11.996 23.636C5.556 23.636.36 18.44.36 12 .36 5.559 5.556.364 11.996.364c6.44 0 11.637 5.195 11.637 11.636 0 6.44-5.196 11.636-11.637 11.636z"
