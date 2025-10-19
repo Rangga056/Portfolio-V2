@@ -44,8 +44,8 @@ export function Hero() {
     },
     { scope: container }
   );
-  
-  const heroTitle = `Hey there! I'm ${name.split(" ")[0]}.`;
+
+  const heroTitle = `Hey there! I'm ${name.split(" ")[1]}.`;
 
   return (
     <section
@@ -85,7 +85,7 @@ export function Hero() {
             </span>
           ))}
         </h1>
-        <p className="hero-subtitle mt-6 max-w-2xl mx-auto text-lg text-muted-foreground md:text-xl">
+        <p className="hero-subtitle mt-6 max-w-2xl mx-auto text-xl md:text-3xl font-medium">
           {title}
         </p>
         <div className="hero-buttons mt-8 flex justify-center gap-4">
