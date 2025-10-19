@@ -5,6 +5,7 @@ export function GitStats() {
   const GITHUB_USERNAME = "Rangga056";
   const STATS_URL = `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=transparent&bg_color=00000000&title_color=32CD32&text_color=ffffff&icon_color=32CD32&hide_border=true`;
   const LANGS_URL = `https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&hide=jupyter%20notebook&theme=transparent&bg_color=00000000&title_color=32CD32&text_color=ffffff&icon_color=32CD32&hide_border=true&layout=compact`;
+  const CONTRIB_URL = `https://ghchart.rshah.org/32CD32/${GITHUB_USERNAME}`;
 
   return (
     <section id="git-stats" className="bg-muted/30 py-24 sm:py-32">
@@ -37,6 +38,18 @@ export function GitStats() {
               className="rounded-lg"
             />
           </Link>
+        </div>
+        <div className="mt-8 flex justify-center">
+            <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                    src={CONTRIB_URL} 
+                    alt="GitHub Contributions"
+                    width={828}
+                    height={128}
+                    className="rounded-lg"
+                />
+            </Link>
         </div>
       </div>
     </section>
