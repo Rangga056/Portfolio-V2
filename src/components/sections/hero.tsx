@@ -5,10 +5,12 @@ import Link from "next/link";
 import { Github } from "lucide-react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import dynamic from 'next/dynamic';
 
 import { name, title, socialLinks } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import LightRays from "@/components/ui/light-rays";
+
+const FaultyTerminal = dynamic(() => import('@/components/ui/FaultyTerminal'), { ssr: false });
 
 gsap.registerPlugin(useGSAP);
 
@@ -51,17 +53,23 @@ export function Hero() {
       className="relative flex min-h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 -z-10">
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#32CD32"
-          raysSpeed={1.5}
-          lightSpread={0.8}
-          rayLength={1.2}
-          followMouse={true}
-          mouseInfluence={0.1}
-          noiseAmount={0.1}
-          distortion={0.05}
-          className="custom-rays"
+        <FaultyTerminal
+          scale={1.5}
+          gridMul={[2, 1]}
+          digitSize={1.2}
+          timeScale={1}
+          pause={false}
+          scanlineIntensity={1}
+          glitchAmount={1}
+          flickerAmount={1}
+          noiseAmp={1}
+          chromaticAberration={0}
+          dither={0}
+          tint="#32CD32"
+          mouseReact={true}
+          mouseStrength={0.5}
+          pageLoadAnimation={false}
+          brightness={1}
         />
         <div className="absolute inset-0 bg-grid-white/[0.05]" />
       </div>
