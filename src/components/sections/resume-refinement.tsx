@@ -86,7 +86,7 @@ export function ResumeRefinement() {
   }
 
   return (
-    <section id="resume-refinement" className="bg-muted/30 py-24 sm:py-32">
+    <section id="resume-refinement" className="py-24 sm:py-32">
       <div className="container max-w-4xl">
         <Card className="overflow-hidden">
           <CardHeader className="bg-card">

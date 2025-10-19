@@ -5,7 +5,7 @@ import PixelBlast from "@/components/ui/pixel-blast";
 
 export function Skills() {
   return (
-    <section id="skills" className="relative bg-muted/30 py-24 sm:py-32 overflow-hidden">
+    <section id="skills" className="relative py-24 sm:py-32 overflow-hidden">
        <div className="absolute inset-0 -z-10">
         <PixelBlast
           variant="circle"
