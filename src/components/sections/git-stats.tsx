@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { socialLinks } from "@/lib/data";
 
@@ -19,7 +18,8 @@ export function GitStats() {
 
         <div className="mt-12 flex flex-wrap justify-center gap-8">
           <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={STATS_URL}
               alt="GitHub Stats"
               width={400}
@@ -28,7 +28,8 @@ export function GitStats() {
             />
           </Link>
           <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={LANGS_URL}
               alt="Top Languages"
               width={400}
