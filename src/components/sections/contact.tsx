@@ -1,21 +1,25 @@
+"use client";
+
+import dynamic from 'next/dynamic';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { Mail, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { email } from "@/lib/data";
-import Aurora from "@/components/ui/Aurora";
+
+const Threads = dynamic(() => import('@/components/ui/Threads'), { ssr: false });
 
 export function Contact() {
   return (
     <section id="contact" className="relative py-24 sm:py-32 overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <Aurora
-          colorStops={["#228B22", "#32CD32", "#228B22"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={0.2}
+        <Threads
+          color={[0.2, 0.8, 0.2]}
+          amplitude={1}
+          distance={0}
+          enableMouseInteraction={true}
         />
       </div>
       <div className="container">
