@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import { projects, socialLinks } from "@/lib/data";
@@ -6,7 +7,9 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, ArrowRight } from "lucide-react";
-import Dither from "../ui/Dither";
+import dynamic from 'next/dynamic';
+
+const Dither = dynamic(() => import('../ui/Dither'), { ssr: false });
 
 export function Projects() {
   return (
